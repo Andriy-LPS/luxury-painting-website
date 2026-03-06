@@ -180,6 +180,10 @@
     <p>Email: Andriy.n75@gmail.com</p>
     <p>Servicing Sydney & Surrounding Areas</p>
 
+    <a href="https://www.instagram.com/luxury_painting_solutions?igsh=dnRzbW1oM3Iyazdv&utm_source=qr" target="_blank"
+      class="btn-quote">
+      Instagram
+    </a>
   </section>
 
   <footer>
@@ -227,6 +231,18 @@
 
   <script src="script.js"></script>
 
+
+
+  <script>
+    // Паралакс на всіх пристроях
+    const hero = document.querySelector('.hero');
+
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      // Пропорційне зміщення фону
+      hero.style.backgroundPosition = `center ${scrollY * 0.5}px`;
+    });
+  </script>
 
 
 

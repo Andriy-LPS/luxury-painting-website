@@ -125,3 +125,4 @@ document.getElementById("quoteForm")?.addEventListener("submit", e => {
     })
     .catch(() => alert("Oops! Something went wrong."));
 });
+

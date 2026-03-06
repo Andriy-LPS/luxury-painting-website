@@ -60,18 +60,18 @@ nav a:hover {
 /* ================= HERO ================= */
 .hero {
   height: 100vh;
-  /* вся висота екрану */
   background-image: url('images/hero-large.jpg');
-  /* фотографія */
   background-size: cover;
-  /* масштабування без спотворення */
   background-position: center center;
-  /* центр зображення */
   background-repeat: no-repeat;
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  padding-top: 80px;
+  position: relative;
+  /* убираємо fixed, JS керуватиме паралаксом */
+  background-attachment: scroll;
 }
 
 .hero-overlay {
@@ -80,22 +80,38 @@ nav a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.35);
-  /* легке затемнення для тексту */
+  background: rgba(0, 0, 0, 0.35);
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
-.hero-content {
-  text-align: center;
-  color: white;
-  z-index: 2;
+.hero-content h1 {
+  font-size: 70px;
+  color: silver;
+  margin-bottom: 20px;
 }
-
 
 .hero-content p {
+  font-size: 24px;
+  color: #e6e6e6;
   margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 70vh;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
 }
 
 .hero-content h1 {
@@ -154,10 +170,29 @@ section {
   padding: 100px 10%;
 }
 
+/* ================= ABOUT SECTION ================= */
+.about p {
+  margin-bottom: 30px;
+  /* відстань між параграфом і credentials */
+}
+
 .credentials {
   display: flex;
-  gap: 40px;
-  margin-top: 40px;
+  flex-direction: column;
+  /* стовпчик */
+  align-items: flex-start;
+  /* по лівому краю */
+  gap: 15px;
+  /* відстань між блоками Licensed, ABN, Specialisation */
+}
+
+.credentials>div {
+  padding: 0;
+  /* без відступів */
+  background: none;
+  /* без фону */
+  text-align: left;
+  /* вирівняно по лівому краю */
 }
 
 .project-grid {
@@ -654,4 +689,23 @@ header {
 
 .hamburger.active span:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* ================= BUTTON LIKE GET YOUR QUOTE ================= */
+.btn-quote {
+  display: inline-block;
+  padding: 15px 40px;
+  background: linear-gradient(45deg, silver, #999);
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: 0.4s;
+  cursor: pointer;
+  margin-top: 20px;
+  /* відстань від контактів */
+}
+
+.btn-quote:hover {
+  background: linear-gradient(45deg, #999, silver);
 }
