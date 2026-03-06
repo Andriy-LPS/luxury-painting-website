@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxury Painting Solutions | Sydney</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="images/logo.png" class="logo-img" alt="Luxury Painting Solutions"></a>
+      Luxury Painting Solutions
+    </div>
+
+    <nav class="nav-links">
+      <a href="index.html#hero">Home</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="services.html">Our Services</a>
+      <a href="about.html">About Us</a>
+    </nav>
+
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <section id="hero" class="hero">
+    <div class="hero-overlay">
+
+      <div class="hero-content">
+        <h1>Precision in Every Project</h1>
+        <p>Luxury Residential & Commercial Painting in Sydney</p>
+
+        <a href="#" class="btn-primary" id="openFormBtn1">Request a Quote</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="about" class="about">
+
+    <h2>Elite Painting Standards</h2>
+
+    <p>
+      Luxury Painting Solutions delivers high-end finishes for new builds, luxury homes, and commercial spaces.
+      We work alongside builders, developers, and homeowners who expect precision, professionalism, and flawless
+      results.
+    </p>
+
+    <div class="credentials">
+
+      <div>
+        <h3>Licensed & Insured</h3>
+        <p>NSW License No: 490007C</p>
+      </div>
+
+      <div>
+        <h3>ABN</h3>
+        <p>66 273 721 288</p>
+      </div>
+
+      <div>
+        <h3>Specialisation</h3>
+        <p>Residential & Commercial Projects</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="projects" class="projects">
+
+    <h2>Current and Past Projects</h2>
+
+    <div class="project-grid">
+
+      <div class="project-card">
+        <img src="images/project_2.webp">
+      </div>
+
+      <div class="project-card">
+        <img src="images/project_1.webp">
+      </div>
+
+      <div class="project-card">
+        <img src="images/project_4.webp">
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section id="gallery" class="projects">
+
+    <h2>Project Gallery</h2>
+
+    <div class="gallery-tabs">
+      <button class="tab-btn active" data-type="photo">Photo</button>
+      <button class="tab-btn" data-type="video">Video</button>
+    </div>
+
+
+    <div class="project-grid gallery-content photos active">
+
+      <div class="project-card">
+        <img src="images/project_3.webp">
+      </div>
+
+      <div class="project-card">
+        <img src="images/project_5.webp">
+      </div>
+
+      <div class="project-card">
+        <img src="images/project_6.webp">
+      </div>
+
+      <div class="project-card">
+        <img src="images/project_7.webp">
+      </div>
+
+    </div>
+
+
+    <div class="project-grid gallery-content videos">
+
+      <div class="project-card">
+        <video src="images/IMG_0265.mp4" muted></video>
+      </div>
+
+      <div class="project-card">
+        <video src="images/IMG_0266.mp4" muted></video>
+      </div>
+
+      <div class="project-card">
+        <video src="images/IMG_0267.mp4" muted></video>
+      </div>
+
+      <div class="project-card">
+        <video src="images/IMG_0404.mp4" muted></video>
+      </div>
+
+      <div class="project-card">
+        <video src="images/IMG_0402.mp4" muted></video>
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+  <section class="cta">
+
+    <h2>Builders Trust Us. Homeowners Recommend Us.</h2>
+    <p>We don’t just paint — we elevate properties.</p>
+
+    <a href="#" class="btn-primary" id="openFormBtn2">Get Your Quote</a>
+
+  </section>
+
+
+  <section id="contact" class="contact">
+
+    <h2>Contact Luxury Painting Solutions</h2>
+
+    <p>Phone: 0452101483</p>
+    <p>Email: Andriy.n75@gmail.com</p>
+    <p>Servicing Sydney & Surrounding Areas</p>
+
+  </section>
+
+  <footer>
+    <p>© 2026 Luxury Painting Solutions | Licensed & Insured | NSW 490007C</p>
+  </footer>
+
+
+
+  <div id="quoteModal" class="modal">
+
+    <div class="modal-content">
+
+      <span class="close">&times;</span>
+
+      <h2>Request Your Quote</h2>
+
+      <form action="https://formspree.io/f/mqeykara" method="POST">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" name="name" required>
+        </div>
+        <div class="form-group">
+          <label>Phone</label>
+          <input type="tel" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label>Additional Information</label>
+          <textarea name="message" rows="4" placeholder="Tell us about your project"></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send</button>
+      </form>
+
+    </div>
+  </div>
+
+
+
+
+
+
+  <script src="script.js"></script>
+
+
+
+
+
+</body>
+
+</html>
