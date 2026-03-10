@@ -18,6 +18,43 @@ h2 {
   margin-bottom: 40px;
 }
 
+/* ===================== SECTION TITLES ===================== */
+
+section h2 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 40px;
+  font-size: 36px;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  section h2 {
+    font-size: 28px;
+  }
+}
+
+/* ===================== SERVICES TITLE ===================== */
+
+.services-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .services-title {
+    font-size: 28px;
+  }
+}
+
+.about-title {
+  margin-top: 80px;
+}
+
+
+
+
 /* ===================== HEADER ===================== */
 header {
   display: flex;
@@ -708,4 +745,38 @@ header {
 
 .btn-quote:hover {
   background: linear-gradient(45deg, #999, silver);
+}
+
+/* ===================== MOBILE HEADER ===================== */
+
+@media (max-width: 768px) {
+
+  header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+  }
+
+  .logo {
+    position: absolute;
+    left: 10px;
+    filter: drop-shadow(0 0 0.5px silver);
+  }
+
+  .hamburger {
+    position: absolute;
+    right: 10px;
+    font-size: 28px;
+    cursor: pointer;
+  }
+
+  .header-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+
 }
